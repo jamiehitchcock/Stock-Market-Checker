@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+.container{
+    margin-top: 10vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.flex-row{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 3rem;
+    margin: 0 50px;
+}
+#input, #btn{
+    font-size: 2rem;
+    margin: 20px 10px;
+    border: 5px solid black;
+    border-radius: 8px;
+    padding: 5px;
+}
+#input::placeholder{
+    text-align: center;
+    color: black;
+}
+#btn{
+    background-color: white;
+    cursor: pointer;
+}
+#output{
+    font-size: 2rem;
+}
+.green-day{
+    color: green;
+}
+.red-day{
+    color: red;
+}
+
+
+/* media queries for tablet */
+@media only screen and (min-width: 768px){
+    .container{
+        margin-top: 30vh;
+    }
+    .flex-row{
+        display: flex;
+        flex-direction: row;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    #input, #btn{
+        font-size: 3rem;
+        margin: 50px 10px;
+    }
+    #output{
+        font-size: 3rem;
+    }
+}
+/* end of media queries for tablet */
+
+/* larger screens */
+@media only screen and (min-width: 1350px){
+    .container{
+        margin-top: 10vh;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    #input, #btn{
+        font-size: 4rem;
+    }
+    #output{
+        font-size: 5rem;
+    }
+}
+/* end of larger screens */
